@@ -1,22 +1,25 @@
 <%--
   Created by IntelliJ IDEA.
   User: Паша
-  Date: 18.06.2016
-  Time: 1:12
+  Date: 19.06.2016
+  Time: 18:57
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Result Spring MVC</title>
+    <title>RESULT</title>
 </head>
 <body>
-<h2>Submitted Student Information</h2>
-    <h1>Result</h1>
-    <p>Id : <c:out value="${student.id}"/></p>
-    <p>Age : <c:out value="${student.age}"/></p>
-    <p>Name : <c:out value="${student.name}"/></p>
-    <a href="student.jsp">Submit another message</a>
+<h1>Result</h1>
+    <form method="get">
+        <h1>${student.name}</h1>
+        <h1>${person.name}</h1>
+        <h1>${student.age}</h1>
+        <h1>${person.age}</h1>
+
+    </form>
+<a href="student.jsp">Submit another message</a>
 </body>
 </html>

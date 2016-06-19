@@ -12,12 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 
     @RequestMapping(value = "/")
-    public String home(){
+    public String index(){
         return "index";
-    }
-
-    @RequestMapping(value = "/login" , method = RequestMethod.GET)
-    public String login(){
-        return "redirect:/";
     }
 }

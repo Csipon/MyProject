@@ -4,9 +4,15 @@ package com.net.csipon.model;
  * Created by Паша on 17.06.2016.
  */
 public class Student {
-    private Integer age = 20;
-    private Integer id = 2;
-    private String name = "Pasha";
+    private Integer age;
+    private Integer id;
+    private String name;
+
+    public Student(){
+        age = 20;
+        id = 1;
+        name = "Pasha";
+    }
 
     public Integer getAge() {
         return age;
